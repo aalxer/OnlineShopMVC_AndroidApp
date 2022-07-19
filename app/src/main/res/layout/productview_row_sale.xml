@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/productsSaleDisplay_rowPage">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ProductSaleDisplay_rowCard"
+        android:layout_width="match_parent"
+        android:layout_height="304dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ProductSaleDisplay_rowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/titleView_sale"
+                android:layout_width="360dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif"
+                android:text="TextView"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/productCodeView_sale"
+                android:layout_width="216dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.017"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleView_sale" />
+
+            <TextView
+                android:id="@+id/descriptionView_sale"
+                android:layout_width="356dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productCodeView_sale" />
+
+            <TextView
+                android:id="@+id/priesTextView_sale"
+                android:layout_width="72dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="4dp"
+                android:text="pries"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                app:layout_constraintBottom_toTopOf="@+id/priesView_sale"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.865"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionView_sale"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/priesView_sale"
+                android:fontFamily="sans-serif"
+                android:layout_width="109dp"
+                android:layout_height="38dp"
+                android:layout_marginBottom="28dp"
+                android:text="TextView"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.982"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/addToBasketBtn"
+                android:layout_width="234dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="26dp"
+                android:text="add to basket"
+                android:fontFamily="sans-serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/priesView_sale"
+                app:layout_constraintHorizontal_bias="0.416"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionView_sale"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout >

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.onlineshopmvc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Online Shop | Control Panel"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OnlineShopMVC_10">
+        <activity
+            android:name=".appActivites.managementActivities.DisplayOrderActivity"
+            android:exported="false"
+            android:label="Order"
+            android:parentActivityName=".appActivites.managementActivities.OrdersManagementActivity" />
+        <activity
+            android:name=".appActivites.managementActivities.OrdersManagementActivity"
+            android:exported="false"
+            android:label="All Orders"
+            android:parentActivityName=".appActivites.managementActivities.HomePageActivity" />
+        <activity
+            android:name=".appActivites.saleActivities.ToOrderActivity"
+            android:exported="false"
+            android:label="To Order"
+            android:parentActivityName=".appActivites.saleActivities.ShoppingCartActivity" />
+        <activity
+            android:name=".appActivites.saleActivities.CheckOutActivity"
+            android:exported="false"
+            android:label="Payment"
+            android:parentActivityName=".appActivites.saleActivities.ToOrderActivity" />
+        <activity
+            android:name=".appActivites.saleActivities.CheckStatusActivity"
+            android:exported="false"
+            android:label="Check Status"
+            android:parentActivityName=".appActivites.saleActivities.SaleMainActivity" />
+        <activity
+            android:name=".appActivites.saleActivities.CancelOrderActivity"
+            android:exported="false"
+            android:label="Cancel Order"
+            android:parentActivityName=".appActivites.saleActivities.SaleMainActivity" />
+        <activity
+            android:name=".appActivites.saleActivities.ShoppingCartActivity"
+            android:exported="false"
+            android:label="Shopping Cart"
+            android:parentActivityName=".appActivites.saleActivities.SaleMainActivity" />
+        <activity
+            android:name=".appActivites.saleActivities.SaleMainActivity"
+            android:exported="true"
+            android:label="ONline Shop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".appActivites.managementActivities.UpdateProductActivity"
+            android:exported="false"
+            android:label="Edit Product"
+            android:parentActivityName=".appActivites.managementActivities.ProductsDisplayActivity" />
+        <activity
+            android:name=".appActivites.managementActivities.AddProductActivity"
+            android:exported="false"
+            android:label="Add Product"
+            android:parentActivityName=".appActivites.managementActivities.ProductsDisplayActivity" />
+        <activity
+            android:name=".appActivites.managementActivities.ChangePasswordAcitvity"
+            android:exported="false"
+            android:label="Change Password"
+            android:parentActivityName=".appActivites.managementActivities.HomePageActivity" />
+        <activity
+            android:name=".appActivites.managementActivities.ProductsDisplayActivity"
+            android:exported="false"
+            android:label="Products"
+            android:parentActivityName=".appActivites.managementActivities.HomePageActivity" />
+        <activity
+            android:name=".appActivites.managementActivities.HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".appActivites.managementActivities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- enable GPay -->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

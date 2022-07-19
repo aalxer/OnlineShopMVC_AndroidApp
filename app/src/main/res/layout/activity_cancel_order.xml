@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appActivites.saleActivities.CancelOrderActivity">
+
+    <TextView
+        android:id="@+id/cancelSuccessText"
+        android:layout_width="360dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/LimeGreen"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/cancelBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailFeld" />
+
+    <EditText
+        android:id="@+id/emailFeld"
+        android:layout_width="360dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textSize="9pt"
+        app:layout_constraintBottom_toTopOf="@+id/cancelSuccessText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerNameFeld" />
+
+    <EditText
+        android:id="@+id/customerNameFeld"
+        android:layout_width="360dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:hint="Customer Name"
+        android:textSize="9pt"
+        app:layout_constraintBottom_toTopOf="@+id/emailFeld"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderIdFeld" />
+
+    <EditText
+        android:id="@+id/orderIdFeld"
+        android:layout_width="360dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:hint="Order ID"
+        android:inputType="number"
+        android:textSize="9pt"
+        app:layout_constraintBottom_toTopOf="@+id/customerNameFeld"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="360dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="336dp"
+        android:fontFamily="sans-serif"
+        android:text="Cancel"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancelSuccessText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

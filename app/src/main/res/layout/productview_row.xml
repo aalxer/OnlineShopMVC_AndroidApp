@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ProductDisplayMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ProductRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/stocknrTextView"
+                android:layout_width="72dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="4dp"
+                android:text="stockNr"
+                android:fontFamily="sans-serif"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/priesTextView"
+                app:layout_constraintTop_toBottomOf="@+id/stockNrView" />
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="359dp"
+                android:layout_height="47dp"
+                android:text="TextView"
+                android:fontFamily="sans-serif"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/productCodeView"
+                android:layout_width="224dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.016"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+            <TextView
+                android:id="@+id/descriptionView"
+                android:layout_width="361dp"
+                android:fontFamily="sans-serif"
+                android:layout_height="81dp"
+                android:layout_marginTop="20dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productCodeView" />
+
+            <TextView
+                android:id="@+id/priesTextView"
+                android:layout_width="72dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:text="pries"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priesView" />
+
+            <TextView
+                android:id="@+id/priesView"
+                android:layout_width="109dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="12dp"
+                android:text="TextView"
+                android:fontFamily="sans-serif"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionView" />
+
+            <TextView
+                android:id="@+id/stockNrView"
+                android:layout_width="125dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:text="TextView"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/priesView"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

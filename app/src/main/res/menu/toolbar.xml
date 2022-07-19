@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Shopping Cart"
+        android:id="@+id/shoppingCartItem"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/shoppingcarticon"/>
+
+    <item android:title="Cancel Order"
+        android:id="@+id/orderCancelItem"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:title="Check Status"
+        android:id="@+id/checkStatusItem"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

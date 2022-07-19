@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appActivites.managementActivities.DisplayOrderActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewOrderDisplay"
+        android:layout_width="369dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productsInfoTextOrderDisplay" />
+
+    <Button
+        android:id="@+id/removeOrderBtn"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/LightGray"
+        android:fontFamily="sans-serif"
+        android:text="remove"
+        android:textColor="@color/Red"
+        android:textSize="11pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/changeOrderStateBtn"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <Button
+        android:id="@+id/changeOrderStateBtn"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/Orange"
+        android:fontFamily="sans-serif"
+        android:text="Save"
+        android:textSize="11pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/removeOrderBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/productsInfoTextOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="257dp"
+        android:fontFamily="sans-serif"
+        android:text="Products Info"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewOrderDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/streetTextOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Street / nr :"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toStartOf="@+id/streetOrderDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityAndPostCodeTextOrderDisplay" />
+
+    <TextView
+        android:id="@+id/streetOrderDisplay"
+        android:layout_width="200dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="street"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/streetTextOrderDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/cityOrderDisplay" />
+
+    <TextView
+        android:id="@+id/postcodeOrderDisplay"
+        android:layout_width="100dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="49dp"
+        android:fontFamily="sans-serif"
+        android:text="plz"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/streetOrderDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cityOrderDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/emailOrderDisplay"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <TextView
+        android:id="@+id/cityOrderDisplay"
+        android:layout_width="100dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="city"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/streetTextOrderDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/postcodeOrderDisplay"
+        app:layout_constraintStart_toEndOf="@+id/cityAndPostCodeTextOrderDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/emailOrderDisplay" />
+
+    <TextView
+        android:id="@+id/orderAmountTextOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Order Amount :"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toStartOf="@+id/orderAmountOrderDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderStateTextOrderDisplay" />
+
+    <TextView
+        android:id="@+id/orderAmountOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="amount"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orderAmountTextOrderDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/orderStateMenu" />
+
+    <TextView
+        android:id="@+id/cityAndPostCodeTextOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif"
+        android:text="City/Postcode :"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/streetTextOrderDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/cityOrderDisplay"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextOrderDisplay" />
+
+    <TextView
+        android:id="@+id/customerInfoTextOrderDisplay"
+        android:layout_width="300dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="87dp"
+        android:fontFamily="sans-serif"
+        android:text="Customer Info"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/customerNameTextOrderDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/emailTextOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Email Address :"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/cityAndPostCodeTextOrderDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/emailOrderDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerNameTextOrderDisplay" />
+
+    <TextView
+        android:id="@+id/emailOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="119dp"
+        android:fontFamily="sans-serif"
+        android:text="email"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/cityOrderDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/emailTextOrderDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/customerNameOrderDisplay" />
+
+    <TextView
+        android:id="@+id/customerNameOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="name"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/emailOrderDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/customerNameTextOrderDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/customerInfoTextOrderDisplay" />
+
+    <TextView
+        android:id="@+id/customerNameTextOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Customer :"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/emailTextOrderDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/customerNameOrderDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerInfoTextOrderDisplay" />
+
+    <TextView
+        android:id="@+id/orderDateOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="daet"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/orderStateMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orderDateTextOrderDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/orderNumberOrderDisplay" />
+
+    <TextView
+        android:id="@+id/orderNumberOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="119dp"
+        android:fontFamily="sans-serif"
+        android:text="number"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/orderDateOrderDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orderNumberTextOrderDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/orderInfoTextOrderDisplay" />
+
+    <TextView
+        android:id="@+id/orderStateTextOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Current State :"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/orderAmountTextOrderDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/orderStateMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderDateTextOrderDisplay" />
+
+    <TextView
+        android:id="@+id/orderDateTextOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Ordered at :"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/orderStateTextOrderDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/orderDateOrderDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderNumberTextOrderDisplay" />
+
+    <TextView
+        android:id="@+id/orderNumberTextOrderDisplay"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Order Number :"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/orderDateTextOrderDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/orderNumberOrderDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderInfoTextOrderDisplay" />
+
+    <TextView
+        android:id="@+id/orderInfoTextOrderDisplay"
+        android:layout_width="330dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Order Info"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/orderNumberTextOrderDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/customerInfoTextOrderDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderAmountOrderDisplay" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/productsInfoTextOrderDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streetTextOrderDisplay" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/removeOrderBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewOrderDisplay" />
+
+    <Spinner
+        android:spinnerMode="dropdown"
+        android:id="@+id/orderStateMenu"
+        android:layout_width="218dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/orderAmountTextOrderDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orderStateTextOrderDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/orderDateOrderDisplay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

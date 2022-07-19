@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appActivites.saleActivities.CheckOutActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="4dp">
+
+    <TextView
+        android:id="@+id/firstLineAddressPaymentLayout"
+        android:layout_width="340dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/secondLineAddressPaymentLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameFeldPaymentLayout" />
+
+    <TextView
+        android:id="@+id/secondLineAddressPaymentLayout"
+        android:layout_width="340dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstLineAddressPaymentLayout" />
+
+    <TextView
+        android:id="@+id/nameFeldPaymentLayout"
+        android:layout_width="340dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/firstLineAddressPaymentLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shippingToTextPaymentLayout" />
+
+    <TextView
+        android:id="@+id/shippingToTextPaymentLayout"
+        android:textStyle="bold"
+        android:layout_width="360dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Shipping to :"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/nameFeldPaymentLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderNumberTextPaymentLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/orderNumberPaymentLayout"
+        android:layout_width="220dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@+id/shippingToTextPaymentLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orderNumberTextPaymentLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/googlepay_button_background"
+        android:clickable="true"
+        android:contentDescription="@string/buy_with_googlepay_button_content_description"
+        android:focusable="true"
+        android:padding="4sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondLineAddressPaymentLayout">
+
+        <LinearLayout
+            android:layout_width="375dp"
+            android:layout_height="44dp"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/buy_with_googlepay_button_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/gpayBtn"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:duplicateParentState="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/googlepay_button_overlay"
+            tools:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/orderNumberTextPaymentLayout"
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="sans-serif"
+        android:text="Order Number: "
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/shippingToTextPaymentLayout"
+        app:layout_constraintEnd_toStartOf="@+id/orderNumberPaymentLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

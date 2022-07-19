@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable-anydpi/shoppingCartIcon.xml" value="0.3045" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable-anydpi/shoppingcarticon.xml" value="0.1" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable-v24/buy_with_googlepay_button_content.xml" value="0.358" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable-v24/googlepay_button_background.xml" value="0.358" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable-v24/googlepay_button_content.xml" value="0.358" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable-v24/googlepay_button_no_shadow_background.xml" value="0.358" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable-v24/googlepay_button_overlay.xml" value="0.358" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.294" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable/add_icon.xml" value="0.3635" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.294" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable/ic_baseline_library_add_24.xml" value="0.294" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable/ic_baseline_save_alt_24.xml" value="0.3095" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable/ic_launcher_background.xml" value="0.294" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable/lock.xml" value="0.294" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/drawable/productsdisplay_divider.xml" value="0.2555" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_add_product.xml" value="0.33" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_cancel_order.xml" value="0.3625" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_check_out.xml" value="0.3102310231023102" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_check_status.xml" value="0.33" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_display_order.xml" value="0.3625" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_display_order_custom_adapter.xml" value="0.346875" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_home_page.xml" value="0.3625" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_orders_management.xml" value="0.25" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_orders_management_view_row.xml" value="0.5" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_pay_pal_check_out.xml" value="0.32395833333333335" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_products_display.xml" value="0.25" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_sale_main.xml" value="0.3415384615384615" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_shopping_cart.xml" value="0.346875" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_to_order.xml" value="0.33" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/activity_update_product.xml" value="0.33" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/buy_with_googlepay_button.xml" value="0.5894206549118388" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/buy_with_googlepay_button_no_shadow.xml" value="0.67" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/changepassword_layout.xml" value="0.3625" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/homepage_layout.xml" value="0.33" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/hpmepage_layout.xml" value="0.3484375" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/login_mainlayout.xml" value="0.3625" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/productsdisplay_layout.xml" value="0.41779497098646035" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/productview_row.xml" value="0.33" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/productview_row_sale.xml" value="0.3625" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/layout/shoppingcart_row.xml" value="0.33" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/menu/shoppingcart.xml" value="0.33" />
+        <entry key="..\:/JAVA/Android-Workspace/OnlineShopMVC_1.0/app/src/main/res/menu/toolbar.xml" value="0.3625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

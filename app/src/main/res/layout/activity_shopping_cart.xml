@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shoppingCartLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appActivites.saleActivities.ShoppingCartActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shoppingCartRecyclerView"
+        android:layout_width="406dp"
+        android:layout_height="384dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toTopOf="@+id/TotalPriseText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TotalPriseAmount"
+        android:layout_width="93dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="0"
+        android:textSize="9pt"
+        app:layout_constraintBottom_toTopOf="@+id/checkoutBtnShoppingCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPriseText" />
+
+    <Button
+        android:id="@+id/checkoutBtnShoppingCart"
+        android:layout_width="180dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="185dp"
+        android:fontFamily="sans-serif"
+        android:text="checkout"
+        android:textSize="8pt"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPriseAmount" />
+
+    <TextView
+        android:id="@+id/TotalPriseText"
+        android:layout_width="105dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:text="total:"
+        android:textSize="6pt"
+        app:layout_constraintBottom_toTopOf="@+id/TotalPriseAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingCartRecyclerView" />
+
+    <TextView
+        android:id="@+id/noItemsText"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:fontFamily="sans-serif"
+        android:text="you have not added any products yet"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/shoppingCartRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shoppingCartRecyclerView"
+        app:layout_constraintVertical_bias="0.628" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
